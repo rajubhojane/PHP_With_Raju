@@ -1,9 +1,14 @@
 <?php
-$a=5;
-if($a%2==0)
+function isEven($num)
 {
-    echo "even";
+if($num%2==0)
+{
+    return "$num is even<br>";
 }else{
-    echo "odd";
+    return "$num is odd";
 }
+}
+
+echo isEven(10);
+echo isEven(5);
 ?>
